@@ -6,34 +6,34 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                <img src="../assets/PHP.png" class="card-img-top php" alt="...">
+                <img src="../assets/skills/PHP.png" class="card-img-top php" alt="...">
                
             </div>
             <div class="col-lg-3 col-md-6 col-6 col-skill">
                 
-                    <img src="../assets/JS.png" class="card-img-top" alt="...">
+                    <img src="../assets/skills/JS.png" class="card-img-top" alt="...">
                   
              
             </div>
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                    <img src="../assets/css.png" class="card-img-top" alt="...">
+                    <img src="../assets/skills/css.png" class="card-img-top" alt="...">
             </div>
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                    <img src="../assets/MySQL.png" class="card-img-top mysql" alt="...">
+                    <img src="../assets/skills/MySQL.png" class="card-img-top mysql" alt="...">
             </div>
         
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                <img src="../assets/laravel.png" class="card-img-top" alt="...">
+                <img src="../assets/skills/laravel.png" class="card-img-top" alt="...">
                
             </div>
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                <img src="../assets/vue.png" class="card-img-top" alt="...">
+                <img src="../assets/skills/vue.png" class="card-img-top" alt="...">
             </div>
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                <img src="../assets/bootstrap.svg" class="card-img-top" alt="...">
+                <img src="../assets/skills/bootstrap.svg" class="card-img-top" alt="...">
             </div>
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                 <img src="../assets/git.png" class="card-img-top" alt="...">
+                 <img src="../assets/skills/git.png" class="card-img-top" alt="...">
             </div>
         </div>
     </div>

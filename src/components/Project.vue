@@ -9,7 +9,7 @@
             <div class="col-lg-6 col-12">
                 <div class="row row-projects">
                     <div class="col-lg-12 col-projects" v-for="project in projects" :key="project">
-                        <div class="show" @click="show(project)" >
+                        <div class="show" @click="show(project)">
                             <h3>{{ project.title }}</h3>
                             <p class="tag" v-for="tag in project.tags" :key="tag">{{tag}}</p>
                             <p>{{project.desc}}</p>
@@ -26,33 +26,44 @@
 <div class="modal fade" id="projectModal">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+      
       <div class="modal-body">
         
-        <div class="container">
+        
             <div class="row">
-            <div class="col">
-                <h1 class="modalTitle">{{ project.title }}</h1>
+            <div class="col-lg-4 col-modal-title">
+                <h1 class="modal-title">{{ project.title }}</h1>
                <p>{{ project.desc }}</p> 
             </div>
-            <div class="col">
-                test2
+            <div class="col-lg-8 col-modal-img">
+                <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" v-for="image in project.images" :key="image"> 
+                        <img :src="require('../assets/projects/'+ image.src)" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>{{ image.title }}</h5>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
             </div>
-        </div>
 
         </div>
         
       </div>
-      <div class="modal-footer">
-        
-      </div>
+      
     </div>
   </div>
 </div>
-
 
 </template>
 
@@ -65,13 +76,56 @@ export default {
             project:{},
             projects:[
                 {
-                    id:1, title: 'Animal Shelter', desc:'The shelter records the animal breed, gender, age and other relevant information. They are also checked for diseases or injuries by volunteer veterinarians. Once these strays are rehabilitated, they are now ready for adoption by qualified individuals..', tags:['Laravel','jQuery', 'MySQL','Bootstrap',],
+                    id:1, 
+                    title: 'Animal Shelter', 
+                    desc:'The shelter records the animal breed, gender, age and other relevant information. They are also checked for diseases or injuries by volunteer veterinarians. Once these strays are rehabilitated, they are now ready for adoption by qualified individuals..', 
+                    tags:['Laravel','jQuery', 'MySQL','Bootstrap',],
+                    images:[
+                        {
+                        src: 'AnimalShelter1.2.jpg',
+                        title:'View Animal Status and Details',
+                        },
+                        {
+                        src: 'AnimalShelter2.jpg',
+                        title:'View Animal Diseases',
+                        },
+                        {
+                        src: 'AnimalShelter3.jpg',
+                        title:'View Animal Diseases',
+                        },
+                        {
+                        src: 'AnimalShelter1.jpg',
+                        title:'View Animals',
+                        },
+                    ],
+                   
                 },
                 {
-                    id:2, title: 'Animal Shelter + Vue', desc:'The shelter records the animal breed, gender, age and other relevant information. They are also checked for diseases or injuries by volunteer veterinarians. Once these strays are rehabilitated, they are now ready for adoption by qualified individuals.', tags:['Laravel','Vue.js','Bootstrap 5', 'MySQL'],
+                    id:2, 
+                    title: 'Animal Shelter + Vue', 
+                    desc:'The shelter records the animal breed, gender, age and other relevant information. They are also checked for diseases or injuries by volunteer veterinarians. Once these strays are rehabilitated, they are now ready for adoption by qualified individuals.', 
+                    tags:['Laravel','Vue.js','Bootstrap 5', 'MySQL'],
+                    images:[
+                        {
+                        src: 'AnimalShelterVue2.jpg',
+                        title:'View Animal Status and Details',
+                        },
+                        {
+                        src: 'AnimalShelterVue3.jpg',
+                        title:'View Animal Diseases',
+                        },
+                        {
+                        src: 'AnimalShelterVue1.jpg',
+                        title:'View Animals',
+                        },
+                    ],
+                   
                 },
                 {
-                    id:3, title: 'TicTacToe 2019', desc:'This application is my exam when I applied in company way back 2019. Instruction: Create a web app tic-tac-toe program using Laravel, MySQL and Jquery. It doesnt have to be a nice-looking UI. Just provide a way for 2 players to play tic-tac-toe.',tags:['Laravel','jQuery', 'MySQL'],
+                    id:3, 
+                    title: 'TicTacToe 2019',
+                    desc:'This application is my exam when I applied in company way back 2019. Instruction: Create a web app tic-tac-toe program using Laravel, MySQL and Jquery. It doesnt have to be a nice-looking UI. Just provide a way for 2 players to play tic-tac-toe.',
+                    tags:['Laravel','jQuery', 'MySQL'],
                 }, 
             ]
         }
@@ -152,6 +206,30 @@ p{
 }
 
 .modal-body{
+    padding: 0 0 0 12px;
+    height:800px;
+}
+
+.col-modal-title{
+    margin: 0 auto;
+    background-color:#DA0037;
+    height:800px;
+    padding: 60px;
+}
+
+.modal-title{
+    color: #EDEDED;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:0;
+    font-size: 2vmax;
+}
+
+.col-modal-img{
+    padding: 0 12px 0 0;
+}
+
+
+img{
     height:800px;
 }
 
