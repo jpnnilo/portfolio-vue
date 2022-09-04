@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 >Introducing</h1>  
+                    <h1 >Introduction</h1>  
                                         
                     <h2>About Me</h2>
                     <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>

@@ -19,12 +19,9 @@
                     <img src="../assets/css.png" class="card-img-top" alt="...">
             </div>
             <div class="col-lg-3 col-md-6 col-6 col-skill">
-                
                     <img src="../assets/MySQL.png" class="card-img-top mysql" alt="...">
-             
             </div>
-        </div>
-        <div class="row">
+        
             <div class="col-lg-3 col-md-6 col-6 col-skill">
                 <img src="../assets/laravel.png" class="card-img-top" alt="...">
                
@@ -50,15 +47,7 @@
 export default {
     data(){
         return {
-            topRow:[
-               { 
-                src: '../assets/laravel.png',
-                cardTitle: 'Laravel',
-                }
-            ],
-            row2:{
-
-            },
+           
         }
     }
 }
@@ -90,10 +79,11 @@ img{
 }
 
 .row{
-    margin: 30px 0;
+    margin: 100px 0;
 }
 
 .col-skill{
+    margin-top: 50px;
     padding-top:20px;
    
 }
@@ -115,8 +105,9 @@ img{
     padding-top: 30px;
 }
 
-@media(max-width: 575px){
-    img{
+
+@media(max-width:992px){
+        img{
     margin:0 auto;
     display:block;
     width: 100px;
@@ -128,5 +119,8 @@ img{
 }
 
 }
+
+
+
 
 </style>

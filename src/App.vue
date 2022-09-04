@@ -1,55 +1,59 @@
 <template>
-    <div>
+  <div>
 
-  <nav class="navbar navbar-expand-lg">
-   <div class="container">
- 
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">SKILLS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">PORTFOLIO</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT</a>
-        </li>
-         
-         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
-        </li>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+              </li>
 
 
-      </ul>
-    </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <Home/>
+    <Skills/>
+    <Project/>
+
   </div>
-</nav>
-
-<Home/>
-<Skills></Skills>
-    </div>
 </template>
 
 <script>
 
 import Home from './components/Home.vue'
 import Skills from './components/Skills.vue'
+import Project from './components/Project.vue'
 
 export default {
   name: 'App',
   components:{ 
     Home, 
     Skills,
+    Project,
   },
   data(){
     return{
@@ -64,7 +68,7 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Great+Vibes&family=Montserrat&family=Raleway:wght@900&display=swap');
 
 *{
   box-sizing: border-box;
@@ -111,6 +115,11 @@ height:900px;
 }
 
 #skills{
+  background-color: #202020;
+  height:970px;
+}
+
+#project{
   background-color: #171717;
   height:970px;
 }
