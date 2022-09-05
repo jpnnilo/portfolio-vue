@@ -29,28 +29,29 @@
       
       <div class="modal-body">
         
-        
+                
             <div class="row">
             <div class="col-lg-4 col-modal-title">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <h1 class="modal-title">{{ project.title }}</h1>
                <p>{{ project.desc }}</p> 
             </div>
             <div class="col-lg-8 col-modal-img">
-                <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+                <div id="projectCarousel" class="carousel slide " data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" v-for="image in project.images" :key="image"> 
-                        <img :src="require('../assets/projects/'+ image.src)" class="d-block w-100" alt="...">
+                        <div class="carousel-item" :class="{ active: index === 0}" v-for="(image, index ) in project.images" :key="image"> 
+                        <img :src="require('../assets/projects/'+ image.src)" class="w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>{{ image.title }}</h5>
+                            <h5 class="carouselTitle">{{ image.title }}</h5>
                         </div>
                     </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <i class="bi bi-caret-left-fill"></i>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <i class="bi bi-caret-right-fill"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -82,20 +83,20 @@ export default {
                     tags:['Laravel','jQuery', 'MySQL','Bootstrap',],
                     images:[
                         {
+                        src: 'AnimalShelter1.jpg',
+                        title:'View Adoptable Animals',
+                        },
+                        {
                         src: 'AnimalShelter1.2.jpg',
-                        title:'View Animal Status and Details',
+                        title:'Adopt Animals',
                         },
                         {
                         src: 'AnimalShelter2.jpg',
-                        title:'View Animal Diseases',
+                        title:'View All Animals / CRUD',
                         },
                         {
                         src: 'AnimalShelter3.jpg',
-                        title:'View Animal Diseases',
-                        },
-                        {
-                        src: 'AnimalShelter1.jpg',
-                        title:'View Animals',
+                        title:'View Animal Details and Diseases',
                         },
                     ],
                    
@@ -107,15 +108,15 @@ export default {
                     tags:['Laravel','Vue.js','Bootstrap 5', 'MySQL'],
                     images:[
                         {
-                        src: 'AnimalShelterVue2.jpg',
+                        src: 'AnimalShelterVue1.jpg',
                         title:'View Animal Status and Details',
                         },
                         {
-                        src: 'AnimalShelterVue3.jpg',
+                        src: 'AnimalShelterVue2.jpg',
                         title:'View Animal Diseases',
                         },
                         {
-                        src: 'AnimalShelterVue1.jpg',
+                        src: 'AnimalShelterVue3.jpg',
                         title:'View Animals',
                         },
                     ],
@@ -124,8 +125,18 @@ export default {
                 {
                     id:3, 
                     title: 'TicTacToe 2019',
-                    desc:'This application is my exam when I applied in company way back 2019. Instruction: Create a web app tic-tac-toe program using Laravel, MySQL and Jquery. It doesnt have to be a nice-looking UI. Just provide a way for 2 players to play tic-tac-toe.',
+                    desc:`This game was my exam when I applied in company way back 2019. Instruction: Create a web app tic-tac-toe program using Laravel, MySQL and Jquery. It doesn't have to be a nice-looking UI. Just provide a way for 2 players to play tic-tac-toe.`,
                     tags:['Laravel','jQuery', 'MySQL'],
+                    images:[
+                        {
+                        src: 'tictactoe1.jpg',
+                        title:'Game Start',
+                        },
+                        {
+                        src: 'tictactoe2.jpg',
+                        title:'Game End',
+                        },
+                    ],
                 }, 
             ]
         }
@@ -134,10 +145,13 @@ export default {
         show(project){
             this.project = project;
             $('#projectModal').modal('show');
+           
         },
+
+    
        
     },
- 
+   
 
 }
 </script>
@@ -225,13 +239,31 @@ p{
 }
 
 .col-modal-img{
-    padding: 0 12px 0 0;
+    padding: 0  0 0;
 }
 
 
 img{
     height:800px;
 }
+
+.carouselTitle{
+    background-color: #171717;
+    color: #EDEDED;
+    padding: 10px;
+
+}
+
+.bi-caret-left-fill{
+    color:black;
+    font-size: 30px;
+}
+.bi-caret-right-fill{
+    color:black;
+    font-size: 30px;
+}
+
+
 
 @media(max-width:992px){
     h1,h2{
@@ -250,6 +282,14 @@ img{
         padding-top:50px;
         padding-left: 0;
     }
+
+    .col-modal-title{
+        margin: 0 auto;
+        background-color:#DA0037;
+        height:200px;
+        padding: 10px;
+    }
+
     .portfolio{
     margin-top:100px;
     }   
