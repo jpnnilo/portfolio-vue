@@ -33,6 +33,7 @@
             <div class="row">
             <div class="col-lg-4 col-modal-title">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
                 <h1 class="modal-title">{{ project.title }}</h1>
                <p>{{ project.desc }}</p> 
             </div>
@@ -198,7 +199,7 @@ p{
 }
 
 .portfolio{
-    margin-top:200px;
+    margin-top:300px;
 }
 
 .row-projects{
@@ -276,9 +277,10 @@ img{
 
     #project{
     background:  linear-gradient(to right, #171717 50%, #171717 50%);
+
     }
     .row-projects{
-        margin-top: 40px;
+        margin-top: 0px;
         padding-top:50px;
         padding-left: 0;
     }
@@ -289,15 +291,32 @@ img{
         height:200px;
         padding: 10px;
     }
+    .modal-title{
+          padding: 0px;
+    }
 
     .portfolio{
-    margin-top:100px;
+    margin-top:50px;
     }   
 
     .tag{
     color:#DA0037;
     }
 
+}
+
+@media(max-width:767px){
+    #project{
+        height:1200px;
+    }
+    .col-modal-title{
+        height:250px;
+    }
+}
+@media(max-width:338px){
+    #project{
+        height:1500px;
+    }
 }
 
 </style>

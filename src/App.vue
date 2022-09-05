@@ -38,6 +38,7 @@
     <Home/>
     <Skills/>
     <Project/>
+    <Contact/>
 
   </div>
 </template>
@@ -47,6 +48,7 @@
 import Home from './components/Home.vue'
 import Skills from './components/Skills.vue'
 import Project from './components/Project.vue'
+import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -54,6 +56,7 @@ export default {
     Home, 
     Skills,
     Project,
+    Contact,
   },
   data(){
     return{
@@ -122,6 +125,11 @@ height:900px;
 #project{
   background-color: #171717;
   height:970px;
+}
+
+#contact{
+  background-color: #171717;
+
 }
 
 @media (max-width:500px){
