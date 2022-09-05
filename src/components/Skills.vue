@@ -4,37 +4,34 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
-                <img src="../assets/skills/PHP.png" class="card-img-top php" alt="...">
+        <div class="row ">
+            <div class="col-lg-3 col-md-6 col-6 col-skill" data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img src="../assets/skills/PHP.png" class="card-img-top php" alt="..."  >
                
             </div>
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
-                
+            <div class="col-lg-3 col-md-6 col-6 col-skill"  data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <img src="../assets/skills/JS.png" class="card-img-top" alt="...">
-                  
-             
             </div>
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
+            <div class="col-lg-3 col-md-6 col-6 col-skill"  data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <img src="../assets/skills/css.png" class="card-img-top" alt="...">
             </div>
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
+            <div class="col-lg-3 col-md-6 col-6 col-skill" data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <img src="../assets/skills/MySQL.png" class="card-img-top mysql" alt="...">
             </div>
         
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
+            <div class="col-lg-3 col-md-6 col-6 col-skill" data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="../assets/skills/laravel.png" class="card-img-top" alt="...">
                
             </div>
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
+            <div class="col-lg-3 col-md-6 col-6 col-skill" data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="../assets/skills/vue.png" class="card-img-top" alt="...">
             </div>
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
+            <div class="col-lg-3 col-md-6 col-6 col-skill" data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="../assets/skills/bootstrap.svg" class="card-img-top" alt="...">
             </div>
-            <div class="col-lg-3 col-md-6 col-6 col-skill">
+            <div class="col-lg-3 col-md-6 col-6 col-skill" data-aos="zoom-in"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                  <img src="../assets/skills/git.png" class="card-img-top" alt="...">
-            </div>
+            </div>0
         </div>
     </div>
 </div>
@@ -55,7 +52,7 @@ export default {
 
 <style scoped>
 h2{
-    padding-top: 30px;
+    padding-top: 100px;
     text-align: center; 
     margin-top:-35px;
     color: #EDEDED;
@@ -79,7 +76,7 @@ img{
 }
 
 .row{
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .col-skill{

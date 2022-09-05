@@ -4,16 +4,16 @@
     <div id="home">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1 >Introduction</h1>  
+                <div class="col" >
+                    <h1 data-aos="zoom-in" data-aos-duration="1000">Introduction</h1>  
                                         
-                    <h2>About Me</h2>
-                    <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <h2 data-aos="zoom-in" data-aos-duration="2000">About Me</h2>
+                    <p class="home-text" data-aos="zoom-in" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
                 <div class="col">
-                    <img src="../assets/profile.jpg" alt="profile" class="profile">
-                    <h3>John Phillip Nilo</h3>
-                    <h4>Web Developer</h4>
+                    <img src="../assets/profile.jpg" alt="profile" class="profile" data-aos="fade-right" data-aos-duration="1000">
+                    <h3 data-aos="fade-right" data-aos-duration="2000">John Phillip Nilo</h3>
+                    <h4 data-aos="fade-right" data-aos-duration="3000">Web Developer</h4>
                 </div>
             </div>
         </div>

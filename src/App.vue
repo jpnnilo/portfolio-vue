@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="index">
 
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -10,23 +10,23 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">HOME</a>
+                <a class="nav-link" @click="scroll('index')">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SKILLS</a>
+                <a class="nav-link" @click="scroll('skills')">SKILLS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PORTFOLIO</a>
+                <a class="nav-link" @click="scroll('project')">PORTFOLIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" @click="scroll('contact')">CONTACT</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
+                <a class="nav-link" href="https://github.com/jpnnilo"><i class="bi bi-github"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/in/jpnnilo/"><i class="bi bi-linkedin"></i></a>
               </li>
 
 
@@ -36,9 +36,9 @@
     </nav>
 
     <Home/>
-    <Skills/>
-    <Project/>
-    <Contact/>
+    <Skills />
+    <Project />
+    <Contact />
 
   </div>
 </template>
@@ -63,6 +63,14 @@ export default {
       hello:true,
     }
   },
+  methods:{
+
+    //nav to section scroll
+    scroll(section){
+      let view = document.getElementById(section);
+      view.scrollIntoView(); 
+    }
+  }
   
 }
 </script>
@@ -93,6 +101,7 @@ body{
 .nav-item{
   margin:auto 0;
   padding: 0;
+  cursor: pointer;
   
 }
 .nav-link{

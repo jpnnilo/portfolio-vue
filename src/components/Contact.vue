@@ -1,17 +1,17 @@
 <template>
 <div id="contact">
     
-    <div class="row">
-        <h1>CONTACT</h1>
-        <div class="col-lg-4 col-md-4 col-details">
+    <div class="row" >
+        <h1 data-aos="fade-up" data-aos-duration="1000">CONTACT</h1>
+        <div class="col-lg-4 col-md-4 col-details" data-aos="fade-up" data-aos-duration="2000">
             <i class="bi bi-telephone"></i>
             <h5> 0969-478-6004</h5>
         </div>
-        <div class="col-lg-4 col-md-4 col-details">
+        <div class="col-lg-4 col-md-4 col-details" data-aos="fade-up" data-aos-duration="2000">
             <i class="bi bi-envelope"></i> 
             <h5>nilo.jpn@gmail.com</h5>
         </div>
-        <div class="col-lg-4 col-md-4 col-details">
+        <div class="col-lg-4 col-md-4 col-details" data-aos="fade-up" data-aos-duration="2000">
             
            <i class="bi bi-geo-alt-fill"></i>
             <h5>Western Bicutan Taguig City</h5>

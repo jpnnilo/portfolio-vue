@@ -3,12 +3,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-12 portfolio">
-                <h1>Projects</h1>
-                <h2>PORTFOLIO</h2>
+                <h1 data-aos="fade-right" data-aos-duration="2000">Projects</h1>
+                <h2 data-aos="fade-right" data-aos-duration="3000">PORTFOLIO</h2>
             </div>
             <div class="col-lg-6 col-12">
                 <div class="row row-projects">
-                    <div class="col-lg-12 col-projects" v-for="project in projects" :key="project">
+                    <div class="col-lg-12 col-projects" data-aos="fade-left" data-aos-duration="3000" v-for="project in projects" :key="project">
                         <div class="show" @click="show(project)">
                             <h3>{{ project.title }}</h3>
                             <p class="tag" v-for="tag in project.tags" :key="tag">{{tag}}</p>
@@ -34,8 +34,8 @@
             <div class="col-lg-4 col-modal-title">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                <h1 class="modal-title">{{ project.title }}</h1>
-               <p>{{ project.desc }}</p> 
+                <h1 class="modal-title" >{{ project.title }}</h1>
+               <p >{{ project.desc }}</p> 
             </div>
             <div class="col-lg-8 col-modal-img">
                 <div id="projectCarousel" class="carousel slide " data-bs-ride="carousel">
