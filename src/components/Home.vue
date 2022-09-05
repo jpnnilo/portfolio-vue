@@ -8,7 +8,11 @@
                     <h1 data-aos="zoom-in" data-aos-duration="1000">Introduction</h1>  
                                         
                     <h2 data-aos="zoom-in" data-aos-duration="2000">About Me</h2>
-                    <p class="home-text" data-aos="zoom-in" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="home-text" data-aos="zoom-in" data-aos-duration="3000">
+                        An aspiring web developer, knowledgeable in PHP(Laravel) and
+                        JavaScript(Vue.js) programming language. Hoping to combine my
+                        technical support skills to provide useful web applications for users
+                    </p>
                 </div>
                 <div class="col">
                     <img src="../assets/profile.jpg" alt="profile" class="profile" data-aos="fade-right" data-aos-duration="1000">
